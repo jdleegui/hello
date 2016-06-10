@@ -26,5 +26,11 @@ Define value for property 'package':  org.opendaylight.hello: :
 Define value for property 'classPrefix':  Hello: : 
 Define value for property 'copyright': : Yoyodyne, Inc.
 ```
-- [x] Create a SDN repository 
+- [x] compile and run
+```
+cd hello
+mvn clean install -DskipTests
+./karaf/target/assembly/bin/karaf 
+localhost:8080/index.html
+```
 - [ ] Add simple RPC
