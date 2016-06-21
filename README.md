@@ -34,4 +34,5 @@ mvn clean install -DskipTests
 localhost:8080/index.html
 ```
 - [x] Add simple RPC
-[CUP] (http://www.inocybe.com/2014/11/26/md-sal-cup-example-tutorial/)
+- [CUP] (http://www.inocybe.com/2014/11/26/md-sal-cup-example-tutorial/)
+- [toaster] (https://wiki.opendaylight.org/view/OpenDaylight_Controller:MD-SAL:Toaster_Step-By-Step)
