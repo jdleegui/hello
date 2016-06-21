@@ -33,4 +33,5 @@ mvn clean install -DskipTests
 ./karaf/target/assembly/bin/karaf 
 localhost:8080/index.html
 ```
-- [ ] Add simple RPC
+- [x] Add simple RPC
+[CUP] (http://www.inocybe.com/2014/11/26/md-sal-cup-example-tutorial/)
