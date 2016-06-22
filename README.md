@@ -40,7 +40,7 @@ localhost:8080/index.html
 
 # step guide
 ```
-1. 
+1. Confirm start
 https://wiki.opendaylight.org/view/Controller_Core_Functionality_Tutorials:Application_Development_Tutorial
 
     impl/src/main/java/org/opendaylight/hello/impl/HelloProvider.java
@@ -50,4 +50,31 @@ https://wiki.opendaylight.org/view/Controller_Core_Functionality_Tutorials:Appli
     public void onSessionInitiated(ProviderContext session) {
         LOG.info("HelloProvider Session Initiated");
     }
+2. Modify yang
+Edit
+
+ api/src/main/yang/hello.yang
+ Edit this file to look as below. You will see that we are adding the code in a YANG module to define the 'hello-world' RPC:
+
+ module hello {
+  yang-version 1;
+  namespace "urn:opendaylight:params:xml:ns:yang:hello";
+  prefix "hello";
+
+  revision "2015-01-05" {
+   description "Initial revision of hello model";
+  }
+  rpc hello-world {
+   input {
+    leaf name {
+     type string;
+    }
+   }
+   output {
+    leaf greeting {
+     type string;
+    }
+   }
+  }
+ }
 ```
